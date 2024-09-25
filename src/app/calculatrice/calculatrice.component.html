@@ -1,0 +1,24 @@
+<section>
+  <div>
+    <p class="displayOne">{{ displayOne }}</p>
+    <button class="buttonOne" (click)="randomNumber(1)">
+      chiffre aléatoire
+    </button>
+
+    <p class="displayTwo">{{ displayTwo }}</p>
+    <button class="buttonTwo" (click)="randomNumber(2)">
+      chiffre aléatoire
+    </button>
+  </div>
+
+  <p>
+    {{result}}
+  </p>
+
+  <div class="operator" >
+    <button (click)="calculate('+')" >+</button>
+    <button (click)="calculate('-')">-</button>
+    <button (click)="calculate('*')">*</button>
+    <button (click)="calculate('/')">/</button>
+  </div>
+</section>
